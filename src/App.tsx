@@ -9,9 +9,10 @@ function App() {
         <div>Team</div>
         <div>Introduction</div>
       </h1>
-      <p className="flex flex-row justify-center items-center m-10">
+      <p className="flex flex-row justify-center items-center">
         {IntroBox('Abolfazl', 'Ghalandary')}
         {IntroBox('Alireza','Farshi')}
+        {IntroBox('Mohammad','Izadi')}
       </p>
     </div>
   )
