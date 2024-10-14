@@ -11,6 +11,7 @@ function App() {
       </h1>
       <p className="flex flex-row justify-center items-center m-10">
         {IntroBox('Abolfazl', 'Ghalandary')}
+        {IntroBox('Mohammad', 'Izadi')}
       </p>
     </div>
   )
