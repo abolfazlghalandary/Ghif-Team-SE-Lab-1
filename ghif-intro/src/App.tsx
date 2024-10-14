@@ -1,28 +1,18 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>
-        Ghif Team Introduction
+    <div className='h-screen bg-[#212121] p-16'>
+      <h1 className='text-9xl text-white'>
+        <div>GHIF</div>
+        <div>Team</div>
+        <div>Introduction</div>
       </h1>
-      <p className="flex flex-col justify-start items-start">
-        <div>Izadi</div>
-        <div>Farshi</div>
+      <p className="flex flex-row justify-center items-center">
         {IntroBox('Ghalandary')}
       </p>
-    </>
+    </div>
   )
 }
 
@@ -30,8 +20,9 @@ export default App
 
 function IntroBox(name: string) {
   return (
-    <div>
-      {name}
+    <div className='border-[1px] border-white p-2 rounded-2xl'>
+      <p className='text-white'>{name}</p>
+
     </div>
   )
 }
