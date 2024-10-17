@@ -10,9 +10,9 @@ function App() {
         <div>Introduction</div>
       </h1>
       <p className="flex flex-row justify-center items-center">
-        {IntroBox('Abolfazl', 'Ghalandary')}
-        {IntroBox('Alireza','Farshi')}
-        {IntroBox('Mohammad','Izadi')}
+        {IntroBox('Abolfazl', 'Ghalandary','Computer Engineering')}
+        {IntroBox('Alireza','Farshi', 'Computer Engineering')}
+        {IntroBox('Mohammad','Izadi', 'Computer Engineering')}
       </p>
     </div>
   )
@@ -20,11 +20,12 @@ function App() {
 
 export default App
 
-function IntroBox(name: string, last_name: string) {
+function IntroBox(name: string, last_name: string, major: string) {
   return (
-    <div className='border-[1px] border-white p-10 rounded-2xl m-2'>
+    <div className='border-[1px] border-white p-10 rounded-2xl'>
       <p className='text-white'>{name}</p>
       <p className='text-white'>{last_name}</p>
+      <p className='text-white'>{major}</p>
     </div>
   )
 }
